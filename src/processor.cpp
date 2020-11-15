@@ -50,6 +50,7 @@ float Processor::Utilization() {
 
 }
 
+// Class definitions 
 // Saves 't-1' cpu utilization vector, to be used in at time 't'
 // to calculate cpu usage
 void Processor::setPastUtilization(std::vector<float> &past_utilization) {
