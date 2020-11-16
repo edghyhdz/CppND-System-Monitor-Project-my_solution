@@ -112,10 +112,6 @@ long LinuxParser::UpTime() {
 // NOTUSED: Read and return the number of jiffies for the system
 long LinuxParser::Jiffies() { return 0; }
 
-// NOTUSED: Read and return the number of active jiffies for a PID
-// REMOVE: [[maybe_unused]] once you define the function
-long LinuxParser::ActiveJiffies(int pid[[maybe_unused]]) { return 0; }
-
 // NOTUSED: Read and return the number of active jiffies for the system
 long LinuxParser::ActiveJiffies() { return 0; }
 
@@ -262,7 +258,3 @@ string LinuxParser::User(int pid) {
   }
   return string();
 }
-
-// NOTUSED: Read and return the uptime of a process
-// REMOVE: [[maybe_unused]] once you define the function
-long LinuxParser::UpTime(int pid[[maybe_unused]]) { return 0; }
